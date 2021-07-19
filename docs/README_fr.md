@@ -1,38 +1,38 @@
-# iSpindle Documentation
+# Documentation d'iSpindle
 
-***Translation is work in progress, feel free to contribute!
-This translation might be out of sync with the original german one, please double check***
+***La traduction est en cours, vous pouvez y participer!
+Il se peut que cette traduction ne soit pas aussi avancé que la version allemande, pensez à vérifier.***
 
 
-iSpindle (iSpindel) Documentation
+Documentation d'iSpindle (iSpindel)
 ===================
 
-**DIY electronic Hydrometer**
-***Please consider supporting this project***  
+**Hydromètre electronique à faire soi même**
+***Soutenez ce projet s'il vous plait***  
 
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.me/universam)
-
-
-![iSpindle in clean water](/pics/floating.jpg)
-![Dashboard](/pics/Dashboard.jpg)
+[![Donner](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.me/universam)
 
 
-## Table of Contents
+![iSpindle dans de l'eau claire](/pics/floating.jpg)
+![Tableau de bord](/pics/Dashboard.jpg)
+
+
+## Table des matières
 
 
 - [FAQ](FAQ-en.md)
 - [Parts](Parts_en.md)
 - [Calibration](Calibration_en.md)
-- [Circuit Diagram](circuit_diagram_en.md)
+- [Diagramme du circuit](circuit_diagram_en.md)
 - [Upload FHEM](upload-FHEM_en.md)
 - [Ubidots scripting](ubidotsscripting_en.md)
 
 
 - [License](#license)
-- [Principle](#principle)
+- [Principe](#principe)
   - [Metacentric Height](#metacentric-height)
 - [Construction](#construction)
-  - [Components](#components)
+  - [Componsants](#composants)
   - [Circuit Diagram](#circuit-diagram)
   - [Sled](#sled)
 - [Configuration](#configuration)
@@ -44,7 +44,7 @@ iSpindle (iSpindel) Documentation
   - [Calibrating the Spindle](#calibration)
   - [Ubidots Graphen](#ubidots-graphen)
   - [CraftBeerPi](#craftbeerpi)
-- [Software](#software)
+- [Logiciel](#logiciel)
 
 
 ***
@@ -52,22 +52,20 @@ iSpindle (iSpindel) Documentation
 ## License
 
 
-> All rights reserverd, any commercial use is hereby prohibited and will violate applicable patents.
+> Tous droits réservés, toute utilisation commerciale interdite et enfreindrait les droits applicable.
 
 ***
 
-## Principle
+## Principe
 
-Powered by the thread [Alternative to the Spindle](http://hobbybrauer.de/forum/viewtopic.php?f=7&t=11157&view=unread#p170499), the idea was born to reproduce the commercially available electronic tilting spindle using low-cost components.
+Promu par le sujet [Alternative to the Spindle](http://hobbybrauer.de/forum/viewtopic.php?f=7&t=11157&view=unread#p170499), l'idée était née de reproduire le spindler electronique à inclinaison grace à des composant peu onéreux.
 
-The system is based around the use of a heeling (or tilting) cylinder, an ingenious and easy concept - you do not need any external reference (except for gravity) and the cylinder is extremely easy to keep clean. The inclination angle changes in relation to the buoyancy and thus directly in relation to the sugar content. There is an angle formed between the center of mass and the center of bouyancy depending on the density of the fluid.
-
+Le systeme est basé sur l'utilisation d'un cylindre pouvant s'incliner, nu concepte facile et ingénieux - vous n'avez pas besoin de référence extérieure (sauf la gravité) et le cylindre est extrement simple a nettoyer. L'angle d'inclinaison change avec la flotaison, qui est en relation directe avec le taux de sucre. Il y a un angle formé entre le le centre de masse et le centre de flotaison en relation avec la densité du liquide.
 
 ![Kränung](/pics/kraengung.jpg)
 
-Therefore the idea  is to place a Wifi-enable IoT device with an accelerometer and temperature sensor in a floating cylinder. The system will measure the sensors and every x-minutes it will connect to the Wifi and sends its tilt angle, temperature and battery voltage to a cloud service like Ubidots.com to store the data.
-
-With an update interval of 30min it was possible to achive a battery lifetime of almost 3 months!
+Donc l'idée est de placer un outils connecté en wifi disposant d'un accéléromètre et d'un capteur de temperature dans un cylindre flottant. Le système evaluera les capteurs toutes les X minutes, se connectera au wifi et enverra son angle d'inclinaison, sa température et l'état de sa batterie à un service en ligne comme Ubidots.com pour enregistrer les données.
+Avec un interval de mise à jour de 30 minutes, il a été possible de faire durer la batterie 3 mois ! 
 
 ### *Metacentric Height*
 
@@ -193,12 +191,12 @@ The setup with BierBot Bricks is easy and for free. You will need the iSpindle F
 [CraftBeerPi](https://github.com/universam1/iSpindel/issues/3)
 ***
 
-## Software 
+## Logiciel 
 
 ### Firmware flashing
 
 [Firmware flashing](Firmware_en.md)
 
-***if you like it, let me know***  :beers:
+***Si vous l'aimez, faites le moi savoir***  :beers:
 
-[![Donate](https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donate_LG.gif)](https://www.paypal.me/universam)
+[![Donner](https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donate_LG.gif)](https://www.paypal.me/universam)
