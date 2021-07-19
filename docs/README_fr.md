@@ -67,14 +67,13 @@ Le systeme est basé sur l'utilisation d'un cylindre pouvant s'incliner, nu conc
 Donc l'idée est de placer un outils connecté en wifi disposant d'un accéléromètre et d'un capteur de temperature dans un cylindre flottant. Le système evaluera les capteurs toutes les X minutes, se connectera au wifi et enverra son angle d'inclinaison, sa température et l'état de sa batterie à un service en ligne comme Ubidots.com pour enregistrer les données.
 Avec un interval de mise à jour de 30 minutes, il a été possible de faire durer la batterie 3 mois ! 
 
-### *Metacentric Height*
+### *Hauteur Metacentrique*
 
-Actually, this is the "metacentre", the cylinder will tilt as the liquid density changes in relation to its center of mass and center of bouyancy. The angle of tilt can then be measured. 
+Il s'agit en fait du "metacentre de gravité", le cylindre s'inclinera au fur et à mesure que la densité du liquide varie proportionnelement à son centre de de gravité et son centre de flotaison. L'angle de cette inclinaison peut alors etre mesurée.
 
-It is possible to trim the cylinder by adding a few grams on the bottom so that the cylinder is more upright, or on the lid, so that it is more tilted.
+Il est possible de lester le cylindre en ajoutant quelques grammes au fond pour que le cylindre soit plus droit, ou sur le bouchon, pour qu'il soit plus incliné.
 
-The software calculates the Euler angle for X and Y from the XYZ acceleration values and forms the absolute angle. We compute these with the calibrated parameters to ° Plato, SG or similar by correlating to measured references.
-
+Le logiciel calcule l'angle d'Euler pour X et Y à partir des valeurs XYZ de l'acceléromètre et forme l'angle absolu. Nous transformons ces valeurs avec les paramètres de calibratio en ° Plato, SG ou equivalent grace à une table de références.
 
 ***
 
